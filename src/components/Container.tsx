@@ -3,9 +3,9 @@ type ContainerProps = {
 }
 
 
-export const Container = (props:ContainerProps) => {
+export const Container = ({styles}:ContainerProps) => {  //destruration du props
     return (
-        <div style={props.styles}>
+        <div style={styles}>
             Text content goes here
         </div>
     )

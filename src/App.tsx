@@ -14,6 +14,7 @@ import { Input } from './components/Input';
 import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import Text from './components/polymorphic/Text';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { User } from './components/state/User';
 import { Status } from './components/Status';
@@ -92,8 +93,11 @@ function App() {
       {/* <Toast position='left-bottom'/>
       <Toast position='center'/> */}
 
-      <CustomButton variant="primary" onClick={() => console.log("clicked")}>Button 1</CustomButton>
+      {/* <CustomButton variant="primary" onClick={() => console.log("clicked")}>Button 1</CustomButton> */}
 
+      <Text as='h1' size="lg">Heading</Text>
+      <Text as='p' size="md">Paragraph</Text>
+      <Text as = 'label' htmlFor="someId" size="sm" color='secondary'>Label</Text>
     </div>
   );
 }

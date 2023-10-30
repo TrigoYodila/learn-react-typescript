@@ -13,6 +13,7 @@ import { Input } from './components/Input';
 import { Oscar } from './components/Oscar';
 import { Person } from './components/Person';
 import { PersonList } from './components/PersonList';
+import { RandomNumber } from './components/restriction/RandomNumber';
 import { User } from './components/state/User';
 import { Status } from './components/Status';
 
@@ -70,7 +71,7 @@ function App() {
 
       {/* <Private isLoggedIn={true} component={Profile}/> */}
 
-      <List
+      {/* <List
         items={["Batman", "Superman", "Wonder Woman"]}
         onClick={(item) => console.log(item)}
       />
@@ -82,7 +83,9 @@ function App() {
           { first: "Princess", last: "Diana" },
         ]}
         onClick={(item) => console.log(item)}
-      />
+      /> */}
+
+      <RandomNumber value={10} isPositive  />
     </div>
   );
 }

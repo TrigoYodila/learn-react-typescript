@@ -1,4 +1,6 @@
 import './App.css';
+import { Private } from './components/auth/Private';
+import { Profile } from './components/auth/Profile';
 import { Button } from './components/Button';
 import { Container } from './components/Container';
 import { Box } from './components/context/Box';
@@ -61,9 +63,11 @@ function App() {
         <Box />
       </ThemeContextProvider> */}
 
-      <UserContextProvider>
+      {/* <UserContextProvider>
         <User />
-      </UserContextProvider>
+      </UserContextProvider> */}
+
+      <Private isLoggedIn={true} component={Profile}/>
       
     </div>
   );

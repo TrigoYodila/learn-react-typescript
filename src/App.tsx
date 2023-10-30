@@ -16,6 +16,7 @@ import { PersonList } from './components/PersonList';
 import { RandomNumber } from './components/restriction/RandomNumber';
 import { User } from './components/state/User';
 import { Status } from './components/Status';
+import { Toast } from './components/templateliterals/Toast';
 
 function App() {
 
@@ -85,7 +86,10 @@ function App() {
         onClick={(item) => console.log(item)}
       /> */}
 
-      <RandomNumber value={10} isPositive  />
+      {/* <RandomNumber value={10} isPositive  /> */}
+
+      <Toast position='left-bottom'/>
+      <Toast position='center'/>
     </div>
   );
 }
